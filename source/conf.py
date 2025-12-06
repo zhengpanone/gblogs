@@ -28,10 +28,10 @@ simplepdf_vars = {
     'links': '#FF3333',
 }
 
-extensions = ['recommonmark', 
+extensions = ['myst_parser', 
               'sphinx_copybutton',
               'sphinx_markdown_tables',
-              'sphinxcontrib.inkscapeconverter',
+            #   'sphinxcontrib.inkscapeconverter',
               'sphinx.ext.autodoc',
               'sphinx.ext.napoleon',
               'sphinx.ext.viewcode',
@@ -71,7 +71,7 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -106,9 +106,8 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:
     html_theme = 'sphinx_rtd_theme'
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
-highlight_langeuage="go,javascript,html"
+highlight_language="go,javascript,html"
 
 _exts = "../exts"
 sys.path.append(os.path.abspath(_exts))
