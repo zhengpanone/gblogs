@@ -43,9 +43,9 @@ Go项目结构
 
 go语言格式化命令
 
-:: 
+.. code-block:: bash
 
-    go fmt main.go
+  go fmt main.go
 
 .. |image1| image:: ./image/20200225213648.png
 
