@@ -9,6 +9,13 @@
 .. _project: https://github.com/zhengpanone/blogs
 __ project_
 
+`Python基础知识`__
+=================================
+
+.. _python_info: https://pblogs.readthedocs.io/zh-cn/latest/
+__ python_info_
+
+https://pblogs.readthedocs.io/zh-cn/latest/
 
 `生物信息基础知识`__
 =================================
