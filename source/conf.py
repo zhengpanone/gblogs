@@ -5,6 +5,8 @@ import sphinx_rtd_theme
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+_exts = "../exts"
+sys.path.append(os.path.abspath(_exts))
 
 # -- Project information -----------------------------------------------------
 
@@ -109,5 +111,7 @@ if not on_rtd:
 
 highlight_language="go,javascript,html"
 
-_exts = "../exts"
-sys.path.append(os.path.abspath(_exts))
+
+
+numfig = True
+numfig_secnum_depth = 2

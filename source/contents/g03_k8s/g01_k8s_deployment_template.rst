@@ -322,6 +322,23 @@ StatefulSet 用于管理有状态应用，能够提供稳定的网络身份和�
 存储管理
 >>>>>>>>>>>>>>>>>>>>>>>
 
+.. list-table:: Volume 类型与特性场景
+   :header-rows: 1
+   :widths: 30 70
+
+   * - Volume 类型
+     - 特性与场景
+   * - emptyDir
+     - Pod 内多个容器共享临时目录，Pod 结束数据消失
+   * - hostPath
+     - 直接挂宿主机目录，不建议生产使用
+   * - configMap / secret
+     - 将配置文件或密钥以文件形式挂载
+   * - nfs、cephfs 等
+     - 挂载外部存储解决方案
+   * - persistentVolumeClaim
+     - 挂载集群级别持久卷（PVC）
+
 1. PersistentVolume (PV)：集群存储资源
    
    - 定义了实际的存储容量和访问模式
