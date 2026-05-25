@@ -1,11 +1,14 @@
 {
- "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+ "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
   "esbonio.sphinx.pythonCommand": {
-    "command": ["./.venv/bin/python"],
+    "command": ["./.venv/Scripts/python.exe"],
   },
   "liveServer.settings.port": 5501,
   "esbonio.preview.synchronizeScroll": "bothWays",
+  "esbonio.logging.level": "debug",
   "cSpell.words": [
     "viewcode"
   ],
+  "commentTranslate.hover.enabled": true,
+  "python-envs.defaultEnvManager": "ms-python.python:venv",
 }
